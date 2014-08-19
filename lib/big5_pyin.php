@@ -399,7 +399,7 @@ class big5pinyin{
        array("zun",-10256),
        array("zuo",-10254)
     );
-  	public function getPyinyin($str,$charset="utf-8"){
+  	public function getPinyin($str,$charset="utf-8"){
   		if($charset!="GB2312"){
 			$str = $this->changeToGB($str);			
 			$str = $this->_getLetters($str);
